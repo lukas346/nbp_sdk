@@ -40,7 +40,7 @@ golds = self.api.get_gold_rate_from_start_date_to_end_date(start_date, end_date)
 print(golds)
 ```
 
-W razie wątpliwości przeczytaj README do końca i rzuć okiem na [testy]().
+W razie wątpliwości przeczytaj README do końca i rzuć okiem na [testy](https://github.com/lukas346/nbp_sdk/blob/main/tests/test_client.py).
 
 
 ## Dokumentacja
