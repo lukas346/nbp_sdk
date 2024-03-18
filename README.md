@@ -15,28 +15,32 @@ pip install nbp_sdk
 from nbp_sdk.client import NBPApiClient
 from nbp_sdk.types import CurrencyType
 
-currency = self.api.get_currency_rate_from_today(CurrencyType.EUR)
+api = NBPApiClient() 
+
+currency = api.get_currency_rate_from_today(CurrencyType.EUR)
 print(currency)
 
 start_date = datetime(2024, 3, 11)
 end_date = datetime(2024, 3, 14) 
-currencies = self.api.get_currency_rate_from_start_date_to_end_date(start_date, end_date)
+currencies = api.get_currency_rate_from_start_date_to_end_date(CurrencyType.EUR, start_date, end_date)
 print(currencies)
 ```
 
 ```python
 from nbp_sdk.client import NBPApiClient
 
-gold = self.api.get_gold_rate_currently_valid()
+api = NBPApiClient() 
+
+gold = api.get_gold_rate_currently_valid()
 print(gold)
 
 date = datetime(2024, 3, 14)
-gold = self.api.get_gold_rate_from_working_day_before_date(date)
+gold = api.get_gold_rate_from_working_day_before_date(date)
 print(gold)
 
 start_date = datetime(2024, 3, 11)
 end_date = datetime(2024, 3, 14) 
-golds = self.api.get_gold_rate_from_start_date_to_end_date(start_date, end_date)
+golds = api.get_gold_rate_from_start_date_to_end_date(start_date, end_date)
 print(golds)
 ```
 
