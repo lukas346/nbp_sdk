@@ -57,10 +57,6 @@ W razie wątpliwości przeczytaj README do końca i rzuć okiem na [testy](https
 
 Aktualnie obowiązujący kurs waluty w PLN
 
-    get_currency_rate_batch
-
-Seria ostatnich {last} kursów waluty w PLN
-
     get_currency_rate_from_today
 
 Kurs waluty w PLN opublikowany w dniu dzisiejszym (albo brak danych)
@@ -85,10 +81,6 @@ Seria tabel kursów typu opublikowanych w zakresie dat od {start_date} do {end_d
     get_gold_rate_currently_valid
 
 Aktualnie obowiązująca cena złota
-
-    get_gold_rate_batch
-
-Seria ostatnich {last} notowań cen złota
 
     get_gold_rate_from_today
 

@@ -12,7 +12,6 @@ class TestGoldNBPApiClient(TestCase):
     # def test_gold_simple(self):
     #     assert self.api.get_gold_rate_currently_valid()
     #     assert self.api.get_gold_rate_from_today()
-    #     assert self.api.get_gold_rate_batch(3)
 
 
     def test_gold_rate_from_date(self):
@@ -55,7 +54,6 @@ class TestCurrenciesNBPApiClient(TestCase):
     # def test_currency_simple(self):
     #     assert self.api.get_currency_rate_currently_valid(CurrencyType.USD)
     #     assert self.api.get_currency_rate_from_today(CurrencyType.EUR)
-    #     assert self.api.get_currency_rate_batch(CurrencyType.AUD, 3)
 
     def test_currenct_rate_from_date(self):
         date = datetime(2024, 3, 14)

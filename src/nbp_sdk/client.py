@@ -35,19 +35,6 @@ class _NBPApiClientGoldPriceMixin(_NBPApiClientBase):
 
         return Gold.from_response(response[0])
 
-    def get_gold_rate_batch(self, last: int) -> list[Gold]:
-        """
-        Seria ostatnich {last} notowań cen złota
-        """
-        try:
-            response = ApiRequester(
-                url=_urls.GOLD_RATE_BATCH_URL(last)
-            ).get()
-        except NotExistsError:
-            return []
-        
-        return [Gold.from_response(gold) for gold in response]
-
     def get_gold_rate_from_today(self) -> Gold | None:
         """
         Cena złota opublikowana w dniu dzisiejszym (albo brak danych)
@@ -138,25 +125,6 @@ class _NBPApiClientCurrencyMixin(_NBPApiClientBase):
             return
 
         return Currency.from_response(response["rates"][0])
-
-    def get_currency_rate_batch(
-            self,
-            currency: CurrencyType,
-            last: int
-        ) -> list[Currency]:
-        """
-        Seria ostatnich {last} kursów waluty w PLN
-        """
-        table = get_table(currency)
-
-        try:
-            response = ApiRequester(
-                url=_urls.CURRENCY_RATE_BATCH_URL(table.value, currency.value, last)
-            ).get()
-        except NotExistsError:
-            return []
-
-        return [Currency.from_response(currency) for currency in response["rates"]]
 
     def get_currency_rate_from_today(
             self,
