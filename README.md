@@ -104,6 +104,7 @@ Seria tabel kursów typu opublikowanych w zakresie dat od {start_date} do {end_d
 ### Zwracane modele
 ```python
 class Currency:
+    type: CurrencyType
     # przeliczony kurs średni waluty
     average_rate: Decimal
     table_no: str

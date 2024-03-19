@@ -2,11 +2,13 @@ from dataclasses import dataclass
 from decimal import Decimal
 from datetime import datetime
 
+from .types import CurrencyType
 from . import _settings
 
 
 @dataclass
 class Currency:
+    type: CurrencyType
     # przeliczony kurs średni waluty
     average_rate: Decimal
     table_no: str
@@ -14,11 +16,12 @@ class Currency:
     effective_date: datetime
 
     @classmethod
-    def from_response(cls, d: dict):
+    def from_response(cls, d: dict, type: CurrencyType):
         return cls(
             average_rate=Decimal(str(d["mid"])),
             effective_date=datetime.strptime(d["effectiveDate"], _settings.DATE_FORMAT),
-            table_no=d["no"]
+            table_no=d["no"],
+            type=type,
         )
 
 

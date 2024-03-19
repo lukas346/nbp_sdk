@@ -124,7 +124,7 @@ class _NBPApiClientCurrencyMixin(_NBPApiClientBase):
         except NotExistsError:
             return
 
-        return Currency.from_response(response["rates"][0])
+        return Currency.from_response(response["rates"][0], type=currency)
 
     def get_currency_rate_from_today(
             self,
@@ -142,7 +142,7 @@ class _NBPApiClientCurrencyMixin(_NBPApiClientBase):
         except NotExistsError:
             return
 
-        return Currency.from_response(response["rates"][0])
+        return Currency.from_response(response["rates"][0], type=currency)
     
     def get_currency_rate_from_date(
             self,
@@ -165,7 +165,7 @@ class _NBPApiClientCurrencyMixin(_NBPApiClientBase):
         except NotExistsError:
             return
     
-        return Currency.from_response(response["rates"][0])
+        return Currency.from_response(response["rates"][0], type=currency)
 
     def get_currency_rate_from_working_day_before_date(
             self,
@@ -198,7 +198,7 @@ class _NBPApiClientCurrencyMixin(_NBPApiClientBase):
             else:
                 break
 
-        return Currency.from_response(response["rates"][0])
+        return Currency.from_response(response["rates"][0], type=currency)
 
     def get_currency_rate_from_start_date_to_end_date(
             self,
@@ -223,7 +223,7 @@ class _NBPApiClientCurrencyMixin(_NBPApiClientBase):
         except NotExistsError:
             return []
 
-        return [Currency.from_response(currency) for currency in response["rates"]]
+        return [Currency.from_response(rate, type=currency) for rate in response["rates"]]
 
 
 class NBPApiClient(

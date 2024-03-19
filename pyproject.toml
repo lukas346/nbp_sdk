@@ -3,7 +3,7 @@ requires = ["setuptools", "requests>=2.31.0"]
 
 [project]
 name = "nbp-sdk"
-version = "0.1.1"
+version = "0.1.2"
 authors = [
   { name="Łukasz Klim", email="lukasz.klim92@gmail.com" },
 ]
