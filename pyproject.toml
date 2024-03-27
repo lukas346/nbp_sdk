@@ -3,13 +3,14 @@ requires = ["setuptools", "requests>=2.31.0"]
 
 [project]
 name = "nbp-sdk"
-version = "0.1.2"
+version = "0.1.3"
 authors = [
   { name="Łukasz Klim", email="lukasz.klim92@gmail.com" },
 ]
 description = "Plain simple SDK for Polish National Bank (NBP) currency rate"
 readme = "README.md"
 requires-python = ">=3.10"
+dependencies = ['requests>=2.31.0']
 classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent",
