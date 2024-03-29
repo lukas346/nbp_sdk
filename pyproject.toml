@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools", "requests>=2.31.0"]
+requires = ["setuptools"]
 
 [project]
 name = "nbp-sdk"
