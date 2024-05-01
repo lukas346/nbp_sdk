@@ -17,5 +17,5 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/lukas346/wykop_sdk_reloaded"
-Issues = "https://github.com/lukas346/wykop_sdk_reloaded/issues"
+Homepage = "https://github.com/lukas346/nbp_sdk"
+Issues = "https://github.com/lukas346/nbp_sdk/issues"
