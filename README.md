@@ -1,5 +1,8 @@
 # NBP SDK
 
+[![Python package](https://github.com/lukas346/nbp_sdk/actions/workflows/python-package.yml/badge.svg)](https://github.com/lukas346/nbp_sdk/actions/workflows/python-package.yml)
+[![PyPI version](https://badge.fury.io/py/nbp-sdk.svg)](https://badge.fury.io/py/nbp-sdk)
+
 SDK umozliwijące komunikację z [API Narodowego Banku Polskiego](http://api.nbp.pl).
 
 ![](https://ocdn.eu/pulscms-transforms/1/vPek9kpTURBXy9iNzhiN2YwZDU3OWZkODhiZjA1ODdiYTE1NDNlYTcxMy5qcGeSlQLNA8AAwsOVAgDNA8DCw94AAaEwAQ)
