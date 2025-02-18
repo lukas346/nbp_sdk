@@ -10,7 +10,7 @@ SDK umozliwijące komunikację z [API Narodowego Banku Polskiego](http://api.nbp
 
 ----------
 
-Jeśli projekt ci się do czegoś przydał i [to postaw mi kawę ☕](https://buycoffee.to/lukas346). Nie musi być to kawa z Starbucksa, taka biedronkowa też jest ok ;) Każda nawet najmniejsza dotacja to sygnał że to co robię jest dla was wartościowe i warto to utrzymywać.
+Jeśli projekt ci się do czegoś przydał [to postaw mi kawę ☕](https://buycoffee.to/lukas346). Nie musi być to kawa z Starbucksa, taka biedronkowa też jest ok ;) Każda nawet najmniejsza dotacja to sygnał że to co robię jest dla was wartościowe i warto to utrzymywać.
 
 ## Instalacja
 
