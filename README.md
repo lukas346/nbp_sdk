@@ -32,6 +32,7 @@ start_date = datetime(2024, 3, 11)
 end_date = datetime(2024, 3, 14) 
 currencies = api.get_currency_rate_from_start_date_to_end_date(CurrencyType.EUR, start_date, end_date)
 print(currencies)
+
 ```
 
 ```python
@@ -51,6 +52,8 @@ end_date = datetime(2024, 3, 14)
 golds = api.get_gold_rate_from_start_date_to_end_date(start_date, end_date)
 print(golds)
 ```
+
+Przykład praktycznego wykorzystania znajdziecie na moim blogu; [PIT z Binance w 5 minut dzięki Pythonowi](https://www.whileforloop.pl/posts/pit-binance/)
 
 W razie wątpliwości przeczytaj README do końca i rzuć okiem na [testy](https://github.com/lukas346/nbp_sdk/blob/main/tests/test_client.py).
 
