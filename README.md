@@ -18,9 +18,10 @@ Jeśli projekt ci się do czegoś przydał [to postaw mi kawę ☕](https://buyc
 pip install nbp_sdk
 ```
 
-## Przykładowe uzycie
-Praktyczne wykorzystanie znajdziecie na moim blogu; [PIT z Binance w 5 minut dzięki Pythonowi](https://www.whileforloop.pl/posts/pit-binance/)
+## Poradniki
+ * [PIT z Binance w 5 minut dzięki Pythonowi](https://www.whileforloop.pl/posts/pit-binance/)
 
+## Przykładowe uzycie
 
 ```python
 from nbp_sdk.client import NBPApiClient
