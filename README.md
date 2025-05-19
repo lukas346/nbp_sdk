@@ -19,6 +19,9 @@ pip install nbp_sdk
 ```
 
 ## Przykładowe uzycie
+Praktyczne wykorzystanie znajdziecie na moim blogu; [PIT z Binance w 5 minut dzięki Pythonowi](https://www.whileforloop.pl/posts/pit-binance/)
+
+
 ```python
 from nbp_sdk.client import NBPApiClient
 from nbp_sdk.types import CurrencyType
@@ -53,7 +56,6 @@ golds = api.get_gold_rate_from_start_date_to_end_date(start_date, end_date)
 print(golds)
 ```
 
-Przykład praktycznego wykorzystania znajdziecie na moim blogu; [PIT z Binance w 5 minut dzięki Pythonowi](https://www.whileforloop.pl/posts/pit-binance/)
 
 W razie wątpliwości przeczytaj README do końca i rzuć okiem na [testy](https://github.com/lukas346/nbp_sdk/blob/main/tests/test_client.py).
 
