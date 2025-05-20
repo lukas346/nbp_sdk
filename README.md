@@ -19,7 +19,8 @@ pip install nbp_sdk
 ```
 
 ## Poradniki
- * [PIT z Binance w 5 minut dzięki Pythonowi](https://www.whileforloop.pl/posts/pit-binance/)
+ * [Jak zrobić własne usuńKonto z Wykopu
+](https://www.whileforloop.pl/posts/wykop-usunkonto/)
 
 ## Przykładowe uzycie
 
